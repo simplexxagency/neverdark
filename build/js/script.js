@@ -15,7 +15,6 @@ $(document).ready(function () {
             $heroFade.css('opacity', '1');
             $heroDesc.css('opacity', '0');
         } else if (windowBottom >= elementTop) {
-            // console.log(percentage);
             
             // $heroDesc.css('opacity', 1 - percentage);
             if ( percentage < 0.3) {
