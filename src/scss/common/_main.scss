@@ -1,0 +1,101 @@
+// Gill Sans
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic-bold';
+    src: url('../fonts/GillSansProCyrillic-Bold.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic-medium-italic';
+    src:  url('../fonts/GillSansProCyrillic-MediumItali.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-MediumItali.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic-medium';
+    src: url('../fonts/GillSansProCyrillic-Medium.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic-bold-italic';
+    src: url('../fonts/GillSansProCyrillic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic-light-italic';
+    src: url('../fonts/GillSansProCyrillic-LightItalic.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Pro Cyrillic';
+    src: url('../fonts/GillSansProCyrillic-Light.woff2') format('woff2'),
+        url('../fonts/GillSansProCyrillic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gill_sansregular';
+    src: url('../fonts/gillsans-webfont.woff2') format('woff2'),
+         url('../fonts/gillsans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    min-height: 100vh;
+    // overflow-x: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+input, select, textarea {
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: normal;
+}

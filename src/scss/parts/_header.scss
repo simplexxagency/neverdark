@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    background-color: #0F0F0F;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__item {
+        font-family: $font-regular, sans-serif;
+        font-size: 13px;
+        letter-spacing: 2.46508px;
+             
+        a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        max-width: 1500px;
+    }
+}
