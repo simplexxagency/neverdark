@@ -15,10 +15,41 @@ $(document).ready(function () {
             $heroFade.css('opacity', '1');
             $heroDesc.css('opacity', '0');
         } else if (windowBottom >= elementTop) {
-
-            $heroFade.css('opacity',percentage);
-            $heroDesc.css('opacity', 1 - percentage);
-            console.log(percentage);
+            // console.log(percentage);
+            
+            // $heroDesc.css('opacity', 1 - percentage);
+            if ( percentage < 0.3) {
+                $heroDesc.css('opacity', '1').css('transition', 'all ease 2s');
+                $('.hero__bottom').css('opacity', '1').css('transition', 'all ease 2s');
+            }
+            if ( percentage > 0.3) {
+                $('.hero__bottom').css('opacity', 1 - percentage).css('transition', 'all ease 2s');
+                // $heroDesc.css('opacity', '1');
+                $heroDesc.css('opacity', 1 - percentage).css('transition', 'all ease 2s');
+            } 
+            if ( percentage < 0.5 ) {
+                $('.hero__img').css('transform', 'scale(1)').css('transition', 'all ease 2s');
+                $('.hero__bottom-mouse').css('z-index', '1');
+            }
+            if ( percentage > 0.5 ) {
+                $('.hero__img').css('transform', 'scale(1.2)').css('transition', 'all ease 2s'); 
+                $heroDesc.css('opacity', '0').css('transition', 'all ease 1s');
+                $('.hero__bottom').css('opacity', '0').css('transition', 'all ease 1s');
+                $('.hero__bottom-mouse').css('z-index', '0');
+            } 
+            if (percentage < 0.6) {
+                $heroFade.css('opacity', '0').css('transition', 'all ease 1s');
+            }
+            if (percentage > 0.6) {
+                $heroFade.css('opacity', percentage);
+                // $('.hero__fade-line').height((1 - (1 - percentage))*200);
+            }
+            if (percentage > 0.95) {
+                $('header').css('position', 'fixed');
+            } else {
+                $('header').css('position', 'relative');
+            }
+            // console.log(percentage);
         } else {
             $heroFade.css('opacity', '0');
             $heroDesc.css('opacity', '1');
