@@ -838,7 +838,7 @@ body {
 .trinyty__date {
   position: absolute;
   left: -300px;
-  top: 300px;
+  top: 200px;
   z-index: 1;
   mix-blend-mode: difference;
   font-size: 130px;
@@ -920,7 +920,7 @@ body {
   margin: 0 -60px 200px; }
 
 .fire__date {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   position: relative;
   z-index: 1;
   font-size: 130px;
