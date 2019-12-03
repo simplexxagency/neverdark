@@ -99,3 +99,26 @@ input, select, textarea {
     outline: none;
     line-height: normal;
 }
+
+// ----------------
+
+body {
+    background-color: #1a1a1a;
+    font-family: $font-regular, sans-serif;
+}
+
+.text {
+    font-family: $font-noto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: 1.00165px;
+    color: #FFFFFF;
+}
+
+.line {
+    width: 1px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.65);
+}

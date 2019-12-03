@@ -1,0 +1,146 @@
+.history {
+    padding-top: 200px;
+    margin-bottom: -400px;
+
+    &__container {
+        position: relative;
+        min-height: 1000px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__title {
+        mix-blend-mode: difference;
+        position: absolute;
+        z-index: 2;
+        top: -117px;
+        right: -16px;
+        width: 1000px;
+        font-family: 'Gill Sans Pro Cyrillic-medium', sans-serif;
+        font-size: 140px;
+        line-height: 155px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+        width: 700px;
+        position: relative;
+
+        &>img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__plus {
+        position: absolute;
+        bottom: -52px;
+        right: -83px;  
+        width: 270px;
+    }
+
+    &__desc {
+        font-family: $font-regular, sans-serif;
+        font-size: 14px;
+        line-height: 37px;
+        letter-spacing: 0.824889px;
+        color: #E8E8E8;
+    }
+
+    &__line {
+        position: absolute;
+        left: 350px;
+    }
+
+    &__text {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 600px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .history {
+        margin-bottom: 100px;
+
+        &__title {
+            position: relative;
+        }
+
+        &__text {
+            position: relative;
+        }
+
+        &__line {
+            left: 100px;
+        }
+
+        &__desc {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .history {
+        padding-top: 100px;
+
+        &__title {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+            line-height: normal;
+        }
+
+        &__line {
+            height: 300px;
+            left: 50%;
+        }
+
+        
+    }
+}
+
+@media all and (max-width: 767px) {
+    .history {
+
+        &__container {
+            min-height: 800px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__line {
+            height: 200px;
+            left: 50%;
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .history {
+
+        &__container {
+            min-height: 700px;
+        }
+
+        &__title {
+            letter-spacing: 2px;
+            font-size: 35px;
+        }
+    }
+}

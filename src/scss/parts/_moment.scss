@@ -1,0 +1,117 @@
+.moment {
+    margin-bottom: -40px;
+
+    &__container {
+        position: relative;
+    }
+
+    &__img {
+        width: 423px;
+    }
+
+    &__date {
+        position: absolute;
+        z-index: 1;
+        left: 353px;
+        top: -28px;
+        font-size: 140px;
+        line-height: 164px;
+        letter-spacing: 9.12389px;
+        color: #FFFFFF;
+        mix-blend-mode: difference;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 37px;
+        letter-spacing: 0.824889px;
+        color: #E8E8E8;
+    }
+
+    &__text {
+        position: absolute;
+        top: 250px;
+        right: 40px;
+        width: 1100px;
+        font-size: 55px;
+        line-height: 76px;
+        text-align: center;
+        letter-spacing: 3.24063px;
+        color: #FFFFFF;
+        mix-blend-mode: difference;
+    }
+
+    &__line {
+        position: relative;
+        bottom: -100%;
+        left: 50%;
+    }
+} 
+
+@media all and (max-width: 1199px) {
+    .moment {
+        margin-bottom: 0;
+
+        &__text {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            letter-spacing: normal;
+            font-size: 48px;
+        }
+
+        &__line {
+            height: 300px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .moment {
+
+        &__date {
+            font-size: 90px;
+        }
+
+        &__line {
+            height: 300px;
+        }
+
+        &__text {
+            font-size: 30px;
+            line-height: normal;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .moment {
+
+        &__img {
+            width: 100%;
+        }
+
+        &__date {
+            position: relative;
+            left: 0;
+            top: 0;
+            line-height: normal;
+            letter-spacing: normal;
+            font-size: 60px;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .moment {
+
+        &__text {
+            font-size: 24px;
+        }
+
+        &__line {
+            height: 200px;
+        }
+    }
+}

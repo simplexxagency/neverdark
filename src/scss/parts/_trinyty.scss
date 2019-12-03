@@ -1,0 +1,144 @@
+.trinyty {
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        min-height: 1100px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__text {
+        width: 600px;
+    }
+
+    &__img {
+        position: relative;
+        width: 620px;
+
+        &>img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__pluses {
+        position: absolute;
+        right: -80px;
+        top: -53px;
+        width: 270px;
+    }
+
+    &__date {
+        position: absolute;
+        left: -300px;
+        top: 450px;
+        z-index: 1;
+        mix-blend-mode: difference;
+        font-size: 130px;
+        line-height: 152px;
+        letter-spacing: 8.47218px;
+        color: #FFFFFF;
+    }
+
+    &__line {
+        position: absolute;
+        left: 350px;
+        bottom: 0;
+    }
+
+    &__desc {
+        text-align: right;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.824889px;
+        color: #E8E8E8;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .trinyty {
+
+        &__img {
+            width: 550px;
+        }
+
+        &__pluses {
+            right: -50px;
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .trinyty {
+        margin-bottom: 100px;
+
+        &__container {
+            display: block;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__date {
+            left: 0;
+        }
+
+        &__line {
+            bottom: -100px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .trinyty {
+        margin-bottom: 150px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .trinyty {
+        margin-bottom: 200px;
+
+        &__date {
+            top: 30px;
+            font-size: 70px;
+        }
+
+        &__line {
+            height: 300px;
+            left: 100px;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .trinyty {
+
+        &__box {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .trinyty {
+
+        &__date {
+            font-size: 50px;
+        } 
+
+        &__line {
+            height: 200px;
+            bottom: 0;
+        }
+    }
+}

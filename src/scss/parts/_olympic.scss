@@ -1,0 +1,119 @@
+.olympic {
+    margin-bottom: -200px;
+
+    &__container {
+        position: relative;
+    }
+
+    &__text {
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__date {
+        position: absolute;
+        z-index: 1;
+        right: 188px;
+        top: 0;
+        mix-blend-mode: difference;
+        font-family: $font-regular, sans-serif;
+        font-size: 140px;
+        line-height: 164px;
+        letter-spacing: 9.12389px;
+        color: #FFFFFF;
+    }
+
+    &__img {
+        width: 550px;
+    }
+
+    &__desc {
+        width: 200px;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: right;
+        letter-spacing: 0.824889px;
+        color: #E8E8E8;
+    }
+
+    &__line {
+        position: relative;
+        right: 210px;
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .olympic {
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .olympic {
+
+        &__date {
+            font-size: 90px;
+            right: 260px;
+        }
+
+        &__text {
+            top: 60%;
+        }
+
+        &__line {
+            right: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .olympic {
+
+        &__date {
+            position: relative;
+            right: 160px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__line {
+            right: 0;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .olympic {
+
+        &__text {
+            position: relative;
+        }
+
+        &__line {
+            right: 50%;
+            height: 200px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__date {
+            font-size: 50px;
+            right: unset;
+            left: 0;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .hero {
-    // padding-top: 100px; !!!
+    position: relative;
+    z-index: 3;
 
     .container-fluid {
         padding: 0;
@@ -45,7 +46,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // mix-blend-mode: exclusion;
+        mix-blend-mode: luminosity;
     }
 
     &__logo {
@@ -61,7 +62,7 @@
         letter-spacing: 11.1245px;
         text-transform: uppercase;
         color: $color-light;
-        mix-blend-mode: exclusion;
+        white-space: nowrap;
     }
 
     &__bottom {
@@ -98,7 +99,12 @@
             left: 50%;
             top: -100px;
             transform: translateX(-50%);
+            transition: all ease 1s;
             
+            &:hover {
+                top: -80px;
+                transition: all ease 2s;
+            }
 
             img {
                 filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(297deg) brightness(103%) contrast(102%);
@@ -130,7 +136,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0,0,0, 0.95);
+            background-color: rgba(26,26,26, 0.95);
         }
 
         &-logo {
@@ -183,6 +189,64 @@
             width: 1px;
             height: 200px;
             background-color: #fff;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .hero {
+
+        &__logo {
+            width: 250px;
+        }
+
+        &__text {
+            font-size: 50px;
+        }
+
+        &__fade {
+
+            &-logo {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .hero {
+
+        &__text {
+            font-size: 35px;
+        }
+
+        &__fade {
+
+            &-text {
+                width: 100%;
+                padding: 0 20px;
+            }
+
+            &-line {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .hero {
+
+        &__text {
+            white-space: unset;
+        }
+
+        &__fade {
+
+            &-logo {
+                width: 270px;
+            }
+            
         }
     }
 }
