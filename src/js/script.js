@@ -10,6 +10,7 @@ $(document).ready(function () {
         let windowBottom = $(this).scrollTop() + $(this).height();
         let elementTop = $heroBox.offset().top;
         let percentage = (windowBottom - elementTop) / $heroBox.height();
+        // console.log(percentage);
 
         if (percentage >= 1) {
             $heroFade.css('opacity', '1');
@@ -17,29 +18,30 @@ $(document).ready(function () {
         } else if (windowBottom >= elementTop) {
             
             // $heroDesc.css('opacity', 1 - percentage);
-            if ( percentage < 0.3) {
+            if ( percentage < 0.45) {
                 $heroDesc.css('opacity', '1').css('transition', 'all ease 2s');
                 $('.hero__bottom').css('opacity', '1').css('transition', 'all ease 2s');
                 $('.hero__img').css('transform', 'scale(1)').css('transition', 'all ease 2s');
+                $('.hero__bottom-mouse').css('z-index', '1');
             }
-            if ( percentage > 0.3) {
+            if ( percentage > 0.45) {
                 $('.hero__bottom').css('opacity', 1 - percentage).css('transition', 'all ease 2s');
                 // $heroDesc.css('opacity', '1');
                 $heroDesc.css('opacity', 1 - percentage).css('transition', 'all ease 2s');
-                $('.hero__img').css('transform', 'scale(1.2)').css('transition', 'all ease 2s');
+                $('.hero__img').css('transform', 'scale(1.4)').css('transition', 'all ease 2s');
             } 
-            if ( percentage < 0.5 ) {
-                $('.hero__bottom-mouse').css('z-index', '1');
-            }
-            if ( percentage > 0.5 ) {
+            // if ( percentage < 0.5 ) {
+            //     $('.hero__bottom-mouse').css('z-index', '1');
+            // }
+            if ( percentage > 0.55 ) {
                 $heroDesc.css('opacity', '0').css('transition', 'all ease 1s');
                 $('.hero__bottom').css('opacity', '0').css('transition', 'all ease 1s');
                 $('.hero__bottom-mouse').css('z-index', '0');
             } 
-            if (percentage < 0.6) {
+            if (percentage < 0.7) {
                 $heroFade.css('opacity', '0').css('transition', 'all ease 1s');
             }
-            if (percentage > 0.6) {
+            if (percentage > 0.7) {
                 $heroFade.css('opacity', percentage);
                 // $('.hero__fade-line').height((1 - (1 - percentage))*200);
             }
