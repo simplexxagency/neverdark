@@ -1,0 +1,145 @@
+.footer {
+    padding: 37px 0 44px;
+    background-color: #fff;
+
+    &__header {
+        margin-bottom: 38px;
+        padding-bottom: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(26, 26, 26, 0.3);
+    }
+
+    &__logo {
+        width: 220px;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+
+        &-icon {
+            margin-right: 21px;
+            width: 24px;
+        }
+
+        &-mail {
+            font-size: 25px;
+            line-height: 76px;
+            text-align: center;
+            letter-spacing: 1.47302px;
+            color: #1A1A1A;
+        }
+
+        &-phone {
+            font-size: 25px;
+            line-height: 76px;
+            text-align: center;
+            letter-spacing: 1.47302px;
+            color: #1A1A1A;
+
+            span {
+                font-family: $font-noto, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0.94273px;
+                color: #1A1A1A;
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-wrap {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-address {
+            margin-right: 110px;
+        }
+
+        &-title {
+            margin-bottom: 12px;
+            font-family: $font-noto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 1.17841px;
+            color: #1A1A1A;
+        }
+
+        &-city {
+            margin-bottom: 12px;
+            font-family: $font-noto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.94273px;
+            color: #1A1A1A;
+        }
+
+        &-link {
+
+            a {
+                padding-bottom: 6px;
+                display: flex;
+                align-items: center;
+                font-family: $font-noto, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 3.02273px;
+                color: #1A1A1A;
+                border-bottom: 2px solid #1a1a1a;
+
+                img {
+                    margin-left: 9px;
+                    width: 11px;
+                    filter: brightness(0) saturate(100%) invert(0%) sepia(79%) saturate(2772%) hue-rotate(38deg) brightness(88%) contrast(80%);
+                }
+            }
+        }
+
+        &-button {
+
+            a {
+                display: flex;
+                align-items: center;
+                padding: 22px 67px;
+                font-family: $font-noto, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 3.77841px;
+                color: #FFFFFF;
+                background-color: #1a1a1a;
+            }
+        }
+
+        &-icon {
+            margin-left: 16px;
+            width: 12px;
+        }
+    }
+}

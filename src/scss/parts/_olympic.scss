@@ -1,5 +1,5 @@
 .olympic {
-    margin-bottom: -200px;
+    margin-bottom: -145px;
 
     &__container {
         position: relative;
@@ -8,7 +8,7 @@
     &__text {
         width: 600px;
         position: absolute;
-        top: 50%;
+        top: 37%;
         left: 0;
     }
 
@@ -22,18 +22,24 @@
     &__date {
         position: absolute;
         z-index: 1;
-        right: 188px;
+        right: 264px;
         top: 0;
         mix-blend-mode: difference;
         font-family: $font-regular, sans-serif;
         font-size: 140px;
+        font-weight: 600;
         line-height: 164px;
         letter-spacing: 9.12389px;
         color: #FFFFFF;
+
+        span {
+            font-size: 84px;
+        }
     }
 
     &__img {
         width: 550px;
+        margin-bottom: 24px;
     }
 
     &__desc {
@@ -47,8 +53,8 @@
 
     &__line {
         position: relative;
-        right: 210px;
-        bottom: 0;
+        right: 266px;
+        bottom: -62px;
     }
 }
 

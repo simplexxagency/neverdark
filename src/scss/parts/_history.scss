@@ -1,6 +1,6 @@
 .history {
     padding-top: 200px;
-    margin-bottom: -400px;
+    margin-bottom: -224px;
 
     &__container {
         position: relative;
@@ -20,6 +20,7 @@
         width: 1000px;
         font-family: 'Gill Sans Pro Cyrillic-medium', sans-serif;
         font-size: 140px;
+        font-weight: 600;
         line-height: 155px;
         letter-spacing: 10px;
         text-transform: uppercase;
@@ -55,13 +56,14 @@
     &__line {
         position: absolute;
         left: 350px;
+        bottom: -56px;
     }
 
     &__text {
         position: absolute;
         right: 0;
-        bottom: 0;
-        width: 600px;
+        bottom: -11px;
+        width: 487px;
     }
 }
 

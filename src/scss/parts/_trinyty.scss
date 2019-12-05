@@ -1,4 +1,5 @@
 .trinyty {
+    margin-bottom: -122px;
 
     &__container {
         position: relative;
@@ -12,16 +13,22 @@
     }
 
     &__text {
-        width: 600px;
+        position: relative;
+        top: -115px;
+        width: 555px;
     }
 
     &__img {
         position: relative;
         width: 620px;
+        right: 26px;
+        margin-bottom: 17px;
 
         &>img {
             position: relative;
             z-index: 1;
+            height: 524px;
+            object-fit: cover;
         }
     }
 
@@ -35,19 +42,24 @@
     &__date {
         position: absolute;
         left: -300px;
-        top: 450px;
+        top: 320px;
         z-index: 1;
         mix-blend-mode: difference;
         font-size: 130px;
+        font-weight: 600;
         line-height: 152px;
         letter-spacing: 8.47218px;
         color: #FFFFFF;
+
+        span {
+            font-size: 85px;
+        }
     }
 
     &__line {
         position: absolute;
-        left: 350px;
-        bottom: 60px;
+        left: 405px;
+        bottom: 121px;
     }
 
     &__desc {
