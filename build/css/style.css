@@ -2326,7 +2326,7 @@ body {
     left: 0; }
 
 .footer {
-  padding: 37px 0;
+  padding: 37px 0 44px;
   background-color: #fff; }
   .footer__header {
     margin-bottom: 38px;
@@ -2452,7 +2452,7 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding: 20px 80px;
+      padding: 22px 67px;
       font-family: "Noto Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -2462,5 +2462,5 @@ body {
       color: #FFFFFF;
       background-color: #1a1a1a; }
     .footer__main-icon {
-      margin-left: 10px;
-      width: 14px; }
+      margin-left: 16px;
+      width: 12px; }
