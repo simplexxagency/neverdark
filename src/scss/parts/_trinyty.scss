@@ -123,6 +123,10 @@
 @media all and (max-width: 577px) {
     .trinyty {
 
+        &__pluses {
+            display: none;
+        }
+
         &__box {
             margin-bottom: 40px;
         }

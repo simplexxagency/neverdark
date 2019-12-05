@@ -16,28 +16,28 @@ $(document).ready(function () {
             $heroFade.css('opacity', '1');
             $heroDesc.css('opacity', '0');
         } else if (windowBottom >= elementTop) {
-            
+
             // $heroDesc.css('opacity', 1 - percentage);
-            if ( percentage < 0.45) {
+            if (percentage < 0.45) {
                 $heroDesc.css('opacity', '1').css('transition', 'all ease 2s');
                 $('.hero__bottom').css('opacity', '1').css('transition', 'all ease 2s');
                 $('.hero__img').css('transform', 'scale(1)').css('transition', 'all ease 2s');
                 $('.hero__bottom-mouse').css('z-index', '1');
             }
-            if ( percentage > 0.45) {
+            if (percentage > 0.45) {
                 $('.hero__bottom').css('opacity', 1 - percentage).css('transition', 'all ease 2s');
                 // $heroDesc.css('opacity', '1');
                 $heroDesc.css('opacity', 1 - percentage).css('transition', 'all ease 2s');
                 $('.hero__img').css('transform', 'scale(1.4)').css('transition', 'all ease 2s');
-            } 
+            }
             // if ( percentage < 0.5 ) {
             //     $('.hero__bottom-mouse').css('z-index', '1');
             // }
-            if ( percentage > 0.55 ) {
+            if (percentage > 0.55) {
                 $heroDesc.css('opacity', '0').css('transition', 'all ease 1s');
                 $('.hero__bottom').css('opacity', '0').css('transition', 'all ease 1s');
                 $('.hero__bottom-mouse').css('z-index', '0');
-            } 
+            }
             if (percentage < 0.7) {
                 $heroFade.css('opacity', '0').css('transition', 'all ease 1s');
             }
@@ -72,5 +72,66 @@ $(document).ready(function () {
             $('body').toggleClass('active');
         }
 
+    });
+
+    // Slick in section Example
+    $('.example__slider').slick({
+        dots: false,
+        arrows: true,
+        // mobileFirst: true,
+        swipe: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        nextArrow: $('.example__arrow-right'),
+        prevArrow: $('.example__arrow-left'),
+        responsive: [
+            {
+                breakpoint: 577,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    // Slick in section Example
+    $('.example__slider-second').slick({
+        dots: false,
+        arrows: true,
+        // mobileFirst: true,
+        swipe: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        nextArrow: $('.example__arrow-rightsecond'),
+        prevArrow: $('.example__arrow-leftsecond'),
+        responsive: [
+            {
+                breakpoint: 577,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    // Slick for section Gallery
+    var $status = $('.gallery__number');
+    var $slickElement = $('.gallery__slider');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+        dots: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: $('.gallery__arrow-right'),
+        prevArrow: $('.gallery__arrow-left'),
     });
 });

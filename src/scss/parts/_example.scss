@@ -1,0 +1,192 @@
+.example {
+    
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        line-height: 76px;
+        text-align: center;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #1A1A1A;
+    }
+
+    &__plus {
+        width: 28px;
+
+        img {
+            filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(33%) hue-rotate(348deg) brightness(107%) contrast(80%);
+        }
+    }
+
+    &__header {
+        padding-bottom: 50px;
+        background-color: #fff;
+
+        &-wrap {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-noto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.94273px;
+        color: #1A1A1A;
+
+        span {
+            display: inline-block;
+            width: 500px;
+        }
+    }
+
+    &__main {
+        position: relative;
+
+        &-wrap {
+            padding: 90px 150px;
+            background-color: #1a1a1a;
+        }
+    }
+
+    &__item {
+        outline: 0;
+        flex: 0 0 auto;
+    }
+
+    &__card {
+        width: 545px;
+        padding: 45px;
+        background-color: #fff;
+
+        &-title {
+            font-size: 33px;
+            line-height: 76px;
+            text-align: center;
+            letter-spacing: 1.94438px;
+            color: #1A1A1A;
+        }
+
+        &-desc {
+            margin-bottom: 20px;
+            font-family: $font-noto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 1.00165px;
+            color: #1A1A1A;
+        }
+
+        &-button {
+
+            a {
+                display: flex;
+                align-items: center;
+                padding: 12px 70px;
+                font-family: $font-noto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 76px;
+                text-align: center;
+                letter-spacing: 3.77841px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                background-color: #1a1a1a;
+
+                span {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &-img {
+            width: 14px;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-price {
+            font-size: 60px;
+            line-height: 76px;
+            text-align: center;
+            letter-spacing: 3.53524px;
+            color: #1A1A1A;
+        }
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        width: 460px;
+    }
+
+    &__arrow {
+
+        &-left {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            width: 28px;
+        }
+
+        &-right {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 28px;
+        }
+    }
+
+    &__arrow {
+
+        &-leftsecond {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            width: 28px;
+        }
+
+        &-rightsecond {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 28px;
+        }        
+    }
+
+    &__pluses {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #fff;
+
+        &-top {
+            padding-bottom: 170px;
+        }
+    }
+
+    .slick-track {
+        display: flex;
+    }
+}

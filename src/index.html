@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
+
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -380,8 +384,35 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="compare__header-pluses compare__header-plusesleft">
+                                <div class="compare__header-pluses d-none d-sm-block compare__header-plusesleft">
                                     <img src="img/history-pluses.png" alt="icon">
+                                </div>
+                                <div class="compare__hide-item d-block d-sm-none">
+                                    <div class="compare__box-wrap compare__box-wrapleft">
+                                        <div class="compare__box-house compare__box-icon">
+                                            <img src="img/3.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Нужен <br> дымоход
+                                        </div>
+                                    </div>
+                                    <div class="compare__box-wrap compare__box-wrapleft compare__box-wrapsmoke">
+                                        <div class="compare__box-smoke compare__box-icon">
+                                            <img src="img/5.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Дым сажа <br> копоть
+                                        </div>
+                                    </div>
+                                    <div class="compare__box-wrap compare__box-wrapleft">
+                                        <div class="compare__box-cricket compare__box-icon">
+                                            <img src="img/7.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Дрова разгар <br> чистки
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -408,12 +439,39 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="compare__header-pluses compare__header-plusesright">
+                                <div class="compare__header-pluses d-none d-sm-block compare__header-plusesright">
                                     <img src="img/history-pluses.png" alt="icon">
+                                </div>
+                                <div class="compare__hide-item d-block d-sm-none">
+                                    <div class="compare__box-wrap compare__box-wrapright">
+                                        <div class="compare__box-room compare__box-icon">
+                                            <img src="img/4.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Не нужно ничего <br> кроме розетки
+                                        </div>
+                                    </div>
+                                    <div class="compare__box-wrap compare__box-wrapright">
+                                        <div class="compare__box-fire compare__box-icon">
+                                            <img src="img/6.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Чистое пламя без <br> продуктов горения
+                                        </div>
+                                    </div>
+                                    <div class="compare__box-wrap compare__box-wrapright">
+                                        <div class="compare__box-remote compare__box-icon">
+                                            <img src="img/8.png" alt="icon">
+                                        </div>
+                                        <div class="compare__box-desc">
+                                            Вмикається з пульта <br>
+                                            Не потребує обслуговування
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="compare__header-middle">
+                            <div class="compare__header-middle d-none d-sm-block">
                                 <ul>
                                     <li><img src="img/compare-icon.png" alt="icon"></li>
                                     <li><img src="img/compare-icon.png" alt="icon"></li>
@@ -423,7 +481,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="compare__box-main">
+                        <div class="compare__box-main d-none d-sm-flex">
                             <div class="compare__box-item">
                                 <div class="compare__box-wrap compare__box-wrapleft">
                                     <div class="compare__box-house compare__box-icon">
@@ -582,11 +640,18 @@
             <div class="container">
                 <div class="about__container">
                     <div class="about__header">
-                            <div class="about__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </div>
-                        <div class="about__header-wrap">
-                            <div class="about__title rellax" data-rellax-speed="1" data-rellax-percentage="0.5">О нас</div>
+                        <div class="about__text order-2 order-xl-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                        </div>
+                        <div class="about__header-wrap order-1 order-xl-2">
+                            <div class="about__title rellax" data-rellax-speed="1" data-rellax-percentage="0.5">О нас
+                            </div>
                             <div class="about__img">
                                 <img src="img/IMG_9929.jpg" alt="image">
                                 <div class="about__pluses">
@@ -595,543 +660,1203 @@
                             </div>
                         </div>
 
-                        
+
                         <div class="about__line line"></div>
                     </div>
                     <div class="about__main">
                         <div class="about__main-wrap">
-                                <div class="about__main-img">
-                                        <img src="img/IMG_8446 copy.jpg" alt="image">
-                                    </div>
-                                    <div class="about__main-title rellax"  data-rellax-speed="1" data-rellax-percentage="0.5">
-                                        ТОВ “НЕВЕРДАРК” - украинская производственная компания с собственным производством в Киеве.
-                                    </div>
+                            <div class="about__main-title rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                                ТОВ “НЕВЕРДАРК” - украинская производственная компания с собственным производством в
+                                Киеве.
+                            </div>
+                            <div class="about__main-img">
+                                <img src="img/IMG_8446 copy.jpg" alt="image">
+                            </div>
+
                         </div>
-                        
+
                         <div class="about__main-bg">
                             <img src="img/about-bg.png" alt="bg">
                         </div>
                         <div class="about__main-line line"></div>
                         <div class="about__main-text">
                             <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            
+
                         </div>
                     </div>
                     <div class="about__footer">
                         <div class="about__footer-wrap">
                             <div class="about__footer-title">
-                                    <div class="about__footer-plus">
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </div>
+                                <div class="about__footer-plus">
+                                    <img src="img/about-plus.png" alt="icon">
+                                </div>
                                 Особенности
                             </div>
                         </div>
-                        
+
                         <div class="about__footer-box">
                             <div class="about__footer-top">
-                                    <div class="about__footer-item">
-                                            <div class="about__footer-phone">
-                                                <img src="img/smartphone.svg" alt="icon">
-                                            </div>
-                                            <div class="about__footer-desc">
-                                                работает от приложения <br> на телефоне
-                                            </div>
-                                        </div>
-                                        <div class="about__footer-item">
-                                            <div class="about__footer-clock">
-                                                <img src="img/clock-2.svg" alt="icon">
-                                            </div>
-                                            <div class="about__footer-desc">
-                                                Время возгорания <br> всего 2 минуты
-                                            </div>
-                                        </div>
-                                        <div class="about__footer-item">
-                                            <div class="about__footer-fire">
-                                                <img src="img/burn.svg" alt="icon">
-                                            </div>
-                                            <div class="about__footer-desc">
-                                                работает на экологичном <br> топливе
-                                            </div>
-                                        </div>
+                                <div class="about__footer-item">
+                                    <div class="about__footer-phone">
+                                        <img src="img/smartphone.svg" alt="icon">
+                                    </div>
+                                    <div class="about__footer-desc">
+                                        работает от приложения <br> на телефоне
+                                    </div>
+                                </div>
+                                <div class="about__footer-item">
+                                    <div class="about__footer-clock">
+                                        <img src="img/clock-2.svg" alt="icon">
+                                    </div>
+                                    <div class="about__footer-desc">
+                                        Время возгорания <br> всего 2 минуты
+                                    </div>
+                                </div>
+                                <div class="about__footer-item">
+                                    <div class="about__footer-fire">
+                                        <img src="img/burn.svg" alt="icon">
+                                    </div>
+                                    <div class="about__footer-desc">
+                                        работает на экологичном <br> топливе
+                                    </div>
+                                </div>
                             </div>
                             <div class="about__footer-bottom">
-                                    <div class="about__footer-item">
-                                            <div class="about__footer-check">
-                                                <img src="img/checked.svg" alt="icon">
-                                            </div>
-                                            <div class="about__footer-desc">
-                                                Действует гарантия <br> на работу 5 лет
-                                            </div>
-                                        </div>
-                                        <div class="about__footer-item">
-                                            <div class="about__footer-users">
-                                                <img src="img/users-2.svg" alt="icon">
-                                            </div>
-                                            <div class="about__footer-desc">
-                                                Делается под вас <br> индивидуально
-                                            </div>
-                                        </div>
+                                <div class="about__footer-item">
+                                    <div class="about__footer-check">
+                                        <img src="img/checked.svg" alt="icon">
+                                    </div>
+                                    <div class="about__footer-desc">
+                                        Действует гарантия <br> на работу 5 лет
+                                    </div>
+                                </div>
+                                <div class="about__footer-item">
+                                    <div class="about__footer-users">
+                                        <img src="img/users-2.svg" alt="icon">
+                                    </div>
+                                    <div class="about__footer-desc">
+                                        Делается под вас <br> индивидуально
+                                    </div>
+                                </div>
                             </div>
-                            
+
                             <div class="about__pluses-left">
-                                    <ul>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="about__pluses-right">
-                                    <ul>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                        <li>
-                                            <img src="img/about-plus.png" alt="icon">
-                                        </li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="about__pluses-right">
+                                <ul>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-plus.png" alt="icon">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
         <!-- End About -->
+
+        <!-- Example -->
+        <section class="example">
+            <div class="container">
+                <div class="example__container">
+                    <div class="example__header">
+                        <div class="example__header-wrap">
+                            <div class="example__title">
+                                <div class="example__plus">
+                                    <img src="img/about-plus.png" alt="icon">
+
+                                </div>
+                                Биокамины
+                            </div>
+                        </div>
+
+                        <div class="example__subtitle">
+                            <span> Металлические термоизолирующие корпусы для встраивания в открытые ниши.</span>
+
+                        </div>
+                    </div>
+                    <div class="example__main">
+                        <div class="example__main-wrap">
+                            <div class="example__slider row">
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example__arrows">
+                            <div class="example__arrow-left">
+                                <img src="img/compare-arrow-left.png" alt="icon">
+                            </div>
+                            <div class="example__arrow-right">
+                                <img src="img/compare-arrow-right.png" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example__pluses example__pluses-top">
+                        <img src="img/example-pluses.png" alt="image">
+                    </div>
+
+
+                    <div class="example__header">
+                        <div class="example__title">
+                            <div class="example__plus">
+                                <img src="img/about-plus.png" alt="icon">
+
+                            </div>
+                            Термобоксы для встраивания
+                        </div>
+                        <div class="example__subtitle">
+                            <span>Металлические термоизолирующие корпусы для встраивания в открытые ниши.</span>
+
+                        </div>
+                    </div>
+                    <div class="example__main">
+                        <div class="example__main-wrap">
+                            <div class="example__slider-second row">
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="example__item col-auto">
+                                    <div class="example__card">
+                                        <div class="example__img">
+                                            <img src="img/example-img.png" alt="image">
+                                        </div>
+                                        <div class="example__desc">
+                                            <div class="example__card-title">
+                                                NEVERDARK MOSSWOOD
+                                            </div>
+                                            <div class="example__card-desc">
+                                                Металлические термоизолирующие корпусы для встраивания в открытые ниши.
+                                            </div>
+                                            <div class="example__card-wrap">
+                                                <div class="example__card-button">
+                                                    <a href="#">
+                                                        <span>Заказать</span>
+                                                        <div class="example__card-img">
+                                                            <img src="img/example-arrow.svg" alt="icon">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="example__card-price">
+                                                    750€
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example__arrows">
+                            <div class="example__arrow-leftsecond">
+                                <img src="img/compare-arrow-left.png" alt="icon">
+                            </div>
+                            <div class="example__arrow-rightsecond">
+                                <img src="img/compare-arrow-right.png" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example__pluses">
+                        <img src="img/example-pluses.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Example -->
+
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__container">
+                    <div class="gallery__title">
+                        Галерея
+                    </div>
+                    <div class="gallery__wrap">
+                        <div class="gallery__slider row">
+                            <div class="gallery__item col-auto">
+                                <div class="gallery__card">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__item col-auto">
+                                <div class="gallery__card">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__item col-auto">
+                                <div class="gallery__card">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__item col-auto">
+                                <div class="gallery__card">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__number"></div>
+                    </div>
+
+                    <div class="gallery__arrows">
+                        <div class="gallery__arrow-left">
+                            <img src="img/compare-arrow-left.png" alt="icon">
+                        </div>
+                        <div class="gallery__arrow-right">
+                            <img src="img/compare-arrow-right.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Gallery -->
+
+        <!-- Form -->
+        <section class="form">
+            <div class="container">
+                <div class="form__container">
+                    <div class="form__title-wrap">
+                        <div class="form__title">
+                            <div><img src="img/about-plus.png" alt="icon"></div>
+                            
+                            Свяжитесь с нами
+                        </div>
+                    </div>
+
+                    <div class="form__form-wrap">
+                        <div class="form__form">
+                            <form action="POST">
+                                <div class="form__item">
+                                    <div class="form__item-icon">
+                                        <img src="img/form-icon-1.svg" alt="icon">
+                                    </div>
+
+                                    <input type="text" name="" id="" placeholder="Введите ваше имя" required>
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__item-icon">
+                                        <img src="img/form-icon-2.svg" alt="icon">
+                                    </div>
+
+                                    <input type="text" class="phone" name="" id="" placeholder="Введите ваш телефон"
+                                        required>
+                                </div>
+                                <div class="form__button">
+                                    <input type="submit" value="Отправить">
+                                    <div class="form__button-icon">
+                                            <img src="img/example-arrow.svg" alt="icon">
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Form -->
+
+        <!-- Media -->
+        <section class="media">
+            <div class="container">
+                <div class="media__container">
+                    <div class="media__title">
+                        Мы в социальных сетях
+                    </div>
+                    <div class="media__media">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="media__icon-youtube">
+                                        <img src="img/Shape.svg" alt="icon">
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="media__icon-instagram">
+                                        <img src="img/instagram.svg" alt="icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="media__icon-facebook">
+                                        <img src="img/facebook.svg" alt="icon">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="media__bg-image">
+                        <div>
+                            <img src="img/IMG_9188.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="media__bg-pluses">
+                        <div>
+                            <img src="img/media-pluses.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Media -->
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__header">
+                    <div class="footer__logo">
+                        <img src="img/logo-footer.png" alt="logo">
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <img src="img/footer-icon.svg" alt="icon">
+                            </div>
+                            <div class="footer__contact-mail">
+                                <a href="mailto:hello@neverdark.onr">
+                                    hello@neverdark.onr
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <img src="img/form-icon-2.svg" alt="icon">
+                            </div>
+                            <div class="footer__contact-phone">
+                                <a href="#">
+                                    +38 (044) 227 79 59
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <img src="img/form-icon-2.svg" alt="icon">
+                            </div>
+                            <div class="footer__contact-phone">
+                                +38 (067) 309 43 49 <span>(GSM, Viber, Telegram)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main-wrap">
+                        <div class="footer__main-address">
+                            <div class="footer__main-title">
+                                Украина
+                            </div>
+                            <div class="footer__main-city">
+                                Киев, Верхний Вал 16/4
+                            </div>
+                            <div class="footer__main-link">
+                                <a href="#">
+                                    смотреть на карте
+                                    <img src="img/example-arrow.svg" alt="icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__main-address">
+                            <div class="footer__main-title">
+                                Казахстан
+                            </div>
+                            <div class="footer__main-city">
+                                Астана (скоро)
+                            </div>
+                            <div class="footer__main-city">
+                                Алматы (скоро)
+                            </div>
+                        </div>
+                        <div class="footer__main-address">
+                            <div class="footer__main-title">
+                                Израиль
+                            </div>
+                            <div class="footer__main-city">
+                                Тель-Авив (скоро)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main-button">
+                        <a href="#">
+                            партнерская программа
+                            <div class="footer__main-icon">
+                                <img src="img/example-arrow.svg" alt="icon">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
 
     <!-- Bootstrap -->
@@ -1147,6 +1872,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-jquery@3.0.0/src/simpleParallax.min.js"></script> -->
+
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Mask input -->
+    <script src="js/jquery.maskedinput.min.js"></script>
 
     <script src="js/rellax.min.js"></script>
 

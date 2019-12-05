@@ -1,0 +1,95 @@
+.form {
+    padding-top: 150px;
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    &__container {
+        height: 720px;
+        background: url('../img/fire-bg.png') center no-repeat;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        line-height: 76px;
+        text-align: center;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        div {
+            width: 28px;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(2%) hue-rotate(51deg) brightness(109%) contrast(100%);
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__form {
+        width: 428px;
+
+        &-wrap {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22px;
+        }
+
+        input {
+            padding-bottom: 10px;
+            padding-left: 40px;
+            width: 100%;
+            background-color: transparent;
+            font-family: $font-noto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.94273px;
+            color: #FFFFFF;
+            opacity: 0.44;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    &__button {
+        position: relative;
+
+        input {
+            padding: 20px 80px 20px 60px;
+            font-family: $font-noto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 76px;
+            letter-spacing: 3.77841px;
+            color: #1A1A1A;
+            background-color: #fff;
+        }
+        
+        &-icon {
+            margin-left: 10px;
+            width: 14px;
+        }
+    }
+}

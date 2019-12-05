@@ -1,0 +1,66 @@
+.gallery {
+    padding-top: 130px;
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__title {
+        padding-left: 50px;
+        margin-bottom: 50px;
+        font-size: 140px;
+        line-height: 164px;
+        letter-spacing: 9.12389px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__slider {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        outline: 0;
+        flex: 0 0 auto;
+    }
+
+    &__card {
+        // width: 1065px;
+    }
+
+    &__wrap {
+        padding: 0 220px;
+    }
+
+    &__number {
+        font-size: 50px;
+        line-height: 76px;
+        text-align: center;
+        letter-spacing: 2.94603px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__arrow {
+
+        &-left {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            width: 28px;
+        }
+
+        &-right {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 28px;
+        }
+    }
+}

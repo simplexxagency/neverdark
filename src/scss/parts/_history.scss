@@ -131,6 +131,15 @@
     }
 }
 
+@media all and (max-width: 577px) {
+    .history {
+
+        &__plus {
+            display: none;
+        }
+    }
+}
+
 @media all and (max-width: 420px) {
     .history {
 
