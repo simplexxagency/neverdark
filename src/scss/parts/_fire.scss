@@ -150,6 +150,10 @@
             font-size: 50px;
         }
 
+        &__img {
+            margin-bottom: 15px;
+        }
+
         &__wrap {
             margin: 0 -15px 200px;
         }
@@ -186,9 +190,21 @@
     .fire {
         margin-bottom: 80px;
 
+        &__wrap {
+            margin-bottom: 50px;
+        }
+
         &__title {
             font-size: 26px;
             margin: 0 15px;
+        }
+
+        &__date {
+            font-size: 80px;
+
+            span {
+                font-size: 50px;
+            }
         }
 
         &__bottom {
@@ -203,6 +219,7 @@
         }
 
         &__box {
+            margin-bottom: 70px;
 
             &-pluses {
                 display: none;

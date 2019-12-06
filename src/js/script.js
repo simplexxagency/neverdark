@@ -87,9 +87,9 @@ $(document).ready(function () {
         prevArrow: $('.example__arrow-left'),
         responsive: [
             {
-                breakpoint: 577,
+                breakpoint: 991,
                 settings: {
-                    dots: false
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -108,9 +108,9 @@ $(document).ready(function () {
         prevArrow: $('.example__arrow-leftsecond'),
         responsive: [
             {
-                breakpoint: 577,
+                breakpoint: 991,
                 settings: {
-                    dots: false
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -133,5 +133,12 @@ $(document).ready(function () {
         slidesToScroll: 1,
         nextArrow: $('.gallery__arrow-right'),
         prevArrow: $('.gallery__arrow-left'),
+    });
+
+    // Smooth scroll
+    $('a[href^="#"]').click(function () {
+        var target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
     });
 });

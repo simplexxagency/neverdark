@@ -491,7 +491,7 @@
     .compare {
 
         &__header {
-            justify-content: space-between;
+            justify-content: space-around;
 
             &-item {
                 width: 250px;
@@ -742,6 +742,7 @@
 
 @media all and (max-width: 577px) {
     .compare {
+        padding-bottom: 0;
 
         &__wrap {
             margin-bottom: 50px;

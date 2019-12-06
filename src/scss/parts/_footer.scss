@@ -134,12 +134,189 @@
                 letter-spacing: 3.77841px;
                 color: #FFFFFF;
                 background-color: #1a1a1a;
+
+                &:hover {
+                    box-shadow: 6px 7px 26px rgba(0, 0, 0, 0.5);
+                }
             }
         }
 
         &-icon {
             margin-left: 16px;
             width: 12px;
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    .footer {
+
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+@media all and (min-width: 578px) {
+    .footer {
+
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .footer {
+
+        .container {
+            max-width: 100%;
+        }
+
+        &__item {
+            
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+
+        &__contact {
+
+            &-mail {
+                font-size: 20px;
+                line-height: normal;
+            }
+
+            &-phone {
+                font-size: 20px;
+                line-height: normal;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        &__main {
+
+            &-address {
+                    margin-right: 70px;
+                
+            }
+
+            &-link {
+
+                a {
+                    white-space: nowrap;
+                }
+                
+            }
+
+            &-city {
+                white-space: nowrap;
+            }
+
+            &-button {
+
+                a {
+                    font-size: 16px;
+                    white-space: nowrap;
+                }
+                
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .footer {
+
+        &__header {
+            justify-content: space-around;
+        }
+
+        &__contact {
+            flex-direction: column;
+
+            &-item {
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &__main {
+
+            &-button {
+
+                a {
+                    padding: 22px 35px;
+                }
+            }
+
+            &-address {
+                margin-right: 40px;
+            }
+
+            &-city {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .footer {
+
+        &__main {
+            align-items: center;
+            justify-content: space-around;
+
+            &-wrap {
+                flex-direction: column;
+            }
+
+            &-address {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .footer {
+
+        &__header {
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin-bottom: 30px;
+        }
+
+        &__main {
+            flex-direction: column;
+
+            &-button {
+
+                a {
+                    padding: 20px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
 }

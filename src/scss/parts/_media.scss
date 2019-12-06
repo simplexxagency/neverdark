@@ -1,6 +1,6 @@
 .media {
     // padding: 100px 0;
-    height: 292px;
+    
     overflow: hidden;
 
     .container {
@@ -10,7 +10,7 @@
 
     &__container {
         position: relative;
-        
+        height: 292px;
     }
 
     &__wrap {
@@ -77,12 +77,42 @@
             left: 0;
             right: 0;
             bottom: 0;
+
+            div {
+                width: 100%;
+                height: 100%;
+                
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
         }
 
         &-pluses {
             position: absolute;
             top: 0;
             left: 0;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .media {
+
+        &__wrap {
+            top: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .media {
+
+        &__title {
+            font-size: 40px;
+            letter-spacing: 2px;
         }
     }
 }

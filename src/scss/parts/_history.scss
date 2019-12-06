@@ -70,9 +70,11 @@
 @media all and (max-width: 1199px) {
     .history {
         margin-bottom: 100px;
+        padding-top: 100px;
 
         &__title {
             position: relative;
+            top: 0;
         }
 
         &__text {
@@ -80,7 +82,8 @@
         }
 
         &__line {
-            left: 100px;
+            left: unset;
+            right: 0;
         }
 
         &__desc {
@@ -98,13 +101,12 @@
             position: relative;
             top: 0;
             left: 0;
-            font-size: 50px;
+            font-size: 65px;
             line-height: normal;
         }
 
         &__line {
             height: 300px;
-            left: 50%;
         }
 
         
@@ -113,6 +115,7 @@
 
 @media all and (max-width: 767px) {
     .history {
+        margin-bottom: 70px;
 
         &__container {
             min-height: 800px;
@@ -128,7 +131,6 @@
 
         &__line {
             height: 200px;
-            left: 50%;
         }
     }
 }
@@ -146,12 +148,16 @@
     .history {
 
         &__container {
-            min-height: 700px;
+            min-height: unset;
         }
 
         &__title {
             letter-spacing: 2px;
             font-size: 35px;
+        }
+
+        &__line {
+            display: none;
         }
     }
 }

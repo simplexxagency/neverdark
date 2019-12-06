@@ -86,14 +86,16 @@
 
 @media all and (max-width: 1199px) {
     .trinyty {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
 
         &__container {
-            display: block;
+            flex-direction: column;
+            justify-content: unset;
         }
 
         &__text {
             width: 100%;
+            top: 0;
         }
 
         &__img {
@@ -105,24 +107,41 @@
         }
 
         &__line {
-            bottom: -100px;
+            bottom: 0;
+            height: 300px;
+            left: 50%;
+        }
+
+        &__wrap {
+            margin-bottom: 50px;
         }
     }
 }
 
 @media all and (max-width: 991px) {
     .trinyty {
-        margin-bottom: 150px;
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &__line {
+            position: relative;
+
+        }
     }
 }
 
 @media all and (max-width: 767px) {
     .trinyty {
-        margin-bottom: 200px;
 
         &__date {
             top: 30px;
-            font-size: 70px;
+            font-size: 60px;
+
+            span {
+                font-size: 40px;
+            }
         }
 
         &__line {
@@ -139,8 +158,12 @@
             display: none;
         }
 
-        &__box {
-            margin-bottom: 40px;
+        &__img {
+            right: 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
         }
     }
 }
@@ -153,8 +176,7 @@
         } 
 
         &__line {
-            height: 200px;
-            bottom: 0;
+            display: none;
         }
     }
 }

@@ -110,6 +110,11 @@
                 color: #FFFFFF;
                 background-color: #1a1a1a;
 
+                &:hover {
+                    transition: all ease 1s;
+                    box-shadow: 6px 7px 26px rgba(0, 0, 0, 0.5);
+                }
+
                 span {
                     display: inline-block;
                     margin-right: 21px;
@@ -192,5 +197,109 @@
 
     .slick-track {
         display: flex;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .example {
+
+        &__card {
+            width: unset;
+
+            &-title {
+                line-height: normal;
+            }
+        }
+
+        &__img {
+            width: unset;
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .example {
+
+        &__card {
+            padding: 35px;
+
+            &-title {
+                margin-bottom: 20px;
+            }
+
+            &-wrap {
+                flex-direction: column;
+            }
+
+            &-button {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .example {
+
+        &__main {
+
+            &-wrap {
+                padding: 90px 100px;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 577px) {
+    .example {
+
+        &__main {
+
+            &-wrap {
+                padding: 70px;
+            }
+        }
+
+        &__subtitle {
+
+            span {
+                width: 100%;
+            }
+        }
+
+        &__pluses {
+
+            &-top {
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .example {
+
+        &__title {
+            font-size: 36px;
+            letter-spacing: normal;
+        }
+
+        &__main {
+
+            &-wrap {
+                padding: 70px 20px;
+            }
+        }
+
+        &__card {
+
+            &-button {
+
+                a {
+                    padding: 20px 50px;
+                }
+            }
+        }
     }
 }

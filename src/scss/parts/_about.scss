@@ -299,7 +299,7 @@
 
             &-line {
                 right: 100px;
-                top: -90%;
+                top: -70%;
             }
         }
 
@@ -316,7 +316,7 @@
     .about {
 
         &__header {
-            margin-bottom: 500px;
+            margin-bottom: 450px;
             flex-direction: column;;
         }
 
@@ -331,6 +331,8 @@
 
         &__text {
             width: 100%;
+            left: unset;
+            top: 70px;
             align-self: unset;
         }
 
@@ -374,6 +376,10 @@
                         right: 50px;
                     }
                 }
+            }
+
+            &-desc {
+                font-size: 16px;
             }
         }
     }
@@ -452,6 +458,8 @@
 
 @media all and (max-width: 767px) {
     .about {
+        padding-bottom: 0;
+        margin-bottom: -200px;
 
         &__header {
             margin-bottom: 0;
@@ -520,14 +528,15 @@
 @media all and (max-width: 577px) {
     .about {
         padding-top: 130px;
+        margin-bottom: 0;
 
         &__pluses {
             display: none;
         }
 
         &__title {
-            top: -40px;
-            font-size: 70px;
+            top: -90px;
+            font-size: 60px;
         }
 
         &__header {
@@ -576,5 +585,11 @@
                 letter-spacing: normal;
             }
         }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .about {
+        padding-bottom: 40px;
     }
 }

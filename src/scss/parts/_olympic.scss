@@ -61,11 +61,21 @@
 @media all and (max-width: 1199px) {
     .olympic {
         margin-bottom: 0;
+
+        &__text {
+            top: 66%;
+        }
+
+        &__line {
+            height: 300px;
+            bottom: 0;
+        }
     }
 }
 
 @media all and (max-width: 991px) {
     .olympic {
+        margin-bottom: 100px;
 
         &__date {
             font-size: 90px;
@@ -73,7 +83,7 @@
         }
 
         &__text {
-            top: 60%;
+            top: 70%;
         }
 
         &__line {
@@ -91,6 +101,11 @@
         }
 
         &__text {
+            width: 100%;
+            top: 80%;
+        }
+
+        &__img {
             width: 100%;
         }
 
@@ -117,9 +132,23 @@
         }
 
         &__date {
-            font-size: 50px;
+            font-size: 60px;
             right: unset;
             left: 0;
+
+            span {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .olympic {
+        margin-bottom: 60px;
+
+        &__line {
+            display: none;
         }
     }
 }

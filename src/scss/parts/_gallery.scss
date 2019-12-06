@@ -66,3 +66,67 @@
         }
     }
 }
+
+@media all and (max-width: 1400px) {
+    .gallery {
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .gallery {
+
+        &__wrap {
+            padding: 0 160px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .gallery {
+
+        &__title {
+            font-size: 80px;
+            line-height: normal;
+            letter-spacing: 8px;
+        }
+
+        &__wrap {
+            padding: 0 100px;
+        }
+
+        &__arrow {
+
+            &-left {
+                left: 30px;
+            }
+
+            &-right {
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .gallery {
+        
+        &__wrap {
+            padding: 0 65px;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .gallery {
+        
+        &__title {
+            padding: 0 15px;
+            font-size: 60px;
+        }
+
+        &__wrap {
+            padding: 0 15px;
+        }
+    }
+}
