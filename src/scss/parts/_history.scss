@@ -47,11 +47,14 @@
     }
 
     &__desc {
+        position: relative;
+        z-index: 1;
         font-family: $font-regular, sans-serif;
         font-size: 14px;
         line-height: 37px;
         letter-spacing: 0.824889px;
         color: #E8E8E8;
+        mix-blend-mode: exclusion;
     }
 
     &__line {

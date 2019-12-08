@@ -57,10 +57,8 @@
             background-color: #fff;
 
             &:hover {
-
-                img {
-
-                }
+                transition: all ease 1s;
+                box-shadow: 6px 7px 26px rgba(255, 255, 255, 0.5);
             }
         }
     }

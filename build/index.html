@@ -1401,10 +1401,10 @@
                         </div>
 
                         <div class="example__arrows">
-                            <div class="example__arrow-left">
+                            <div class="example__arrow-left example__arrow">
                                 <img src="img/compare-arrow-left.png" alt="icon">
                             </div>
-                            <div class="example__arrow-right">
+                            <div class="example__arrow-right example__arrow">
                                 <img src="img/compare-arrow-right.png" alt="icon">
                             </div>
                         </div>
@@ -1603,10 +1603,10 @@
                         </div>
 
                         <div class="example__arrows">
-                            <div class="example__arrow-leftsecond">
+                            <div class="example__arrow-leftsecond example__arrow">
                                 <img src="img/compare-arrow-left.png" alt="icon">
                             </div>
-                            <div class="example__arrow-rightsecond">
+                            <div class="example__arrow-rightsecond example__arrow">
                                 <img src="img/compare-arrow-right.png" alt="icon">
                             </div>
                         </div>
@@ -1687,7 +1687,7 @@
 
                     <div class="form__form-wrap">
                         <div class="form__form">
-                            <form action="POST">
+                            <form action="#">
                                 <div class="form__item">
                                     <div class="form__item-icon">
                                         <img src="img/form-icon-1.svg" alt="icon">
@@ -1703,8 +1703,8 @@
                                     <input type="text" class="phone" name="" id="" placeholder="Введите ваш телефон"
                                         required>
                                 </div>
-                                <div class="form__button">
-                                    <input type="submit" value="отправить">
+                                <div class="form__button ">
+                                    <input type="submit" value="отправить" class="js-subscribe-modal">
                                     <div class="form__button-icon">
                                         <img src="img/example-arrow.svg" alt="icon">
                                     </div>
@@ -1860,6 +1860,35 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Popup Subscribe -->
+    <div class="pop-up-subscribe pop-up-mark content passive">
+        <div class="cover"></div>
+        <div class="pop-up col-12">
+
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="pop-up-modal-subscribe subscribe__modal">
+                        <div class="subscribe__modal-title">
+                            Спасибо за заявку!
+                        </div>
+                        <div class="subscribe__modal-media">
+                            Наш менеджер на протяжении n-времени свяжется с Вами!
+                        </div>
+                        <div class="wrapper-close-pop-up">
+                                <div class="close-pop-up">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Popup Subscribe -->
 
 
     <!-- Bootstrap -->

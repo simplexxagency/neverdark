@@ -61,17 +61,23 @@ $(document).ready(function () {
     let $btn = $('.header__menu-line');
     let $navMenu = $('.header__menu-mobile');
 
-    $('.header__menu-btn, .header__item-mobile').on('click', function () {
+    $('.header__menu-btn').on('click', function () {
         if (!($btn.hasClass('active'))) {
             $btn.addClass('active');
             $navMenu.addClass('active');
-            $('body').toggleClass('active');
+            $('body').addClass('active');
         } else {
             $btn.removeClass('active');
             $navMenu.removeClass('active');
-            $('body').toggleClass('active');
+            $('body').removeClass('active');
         }
 
+    });
+
+    $('.header__item-mobile a').on('click', function () {
+        $('.header__menu-line').removeClass('active');
+        $('.header__menu-mobile').removeClass('active');
+        $('body').removeClass('active');
     });
 
     // Slick in section Example
@@ -128,17 +134,35 @@ $(document).ready(function () {
 
     $slickElement.slick({
         dots: false,
-        fade: true,
+        vertical: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: $('.gallery__arrow-right'),
         prevArrow: $('.gallery__arrow-left'),
     });
 
+    // Subscribe pop-up
+    $('.js-subscribe-modal').on('click', function () {
+        $('body').addClass('active');
+        $('.pop-up-subscribe').removeClass('passive');
+    });
+
+    $('.cover, .wrapper-close-pop-up').on('click', function () {
+        $('body').removeClass('active');
+        $(this).closest('.pop-up-mark').addClass('passive');
+    });
+
+    // Form Mask
+    jQuery(function ($) {
+        $('.phone').mask('+99 (999) 999-99-99');
+
+    });
+
     // Smooth scroll
     $('a[href^="#"]').click(function () {
         var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        $('body'). removeClass('active');
         return false;
     });
 });

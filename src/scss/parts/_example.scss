@@ -58,7 +58,7 @@
         position: relative;
 
         &-wrap {
-            padding: 90px 150px 84px;
+            padding: 90px 150px 84px 170px;
             background-color: #1a1a1a;
         }
     }
@@ -153,6 +153,7 @@
             top: 50%;
             left: 20px;
             width: 28px;
+            cursor: pointer;
         }
 
         &-right {
@@ -160,16 +161,15 @@
             top: 50%;
             right: 20px;
             width: 28px;
+            cursor: pointer;
         }
-    }
-
-    &__arrow {
 
         &-leftsecond {
             position: absolute;
             top: 50%;
             left: 20px;
             width: 28px;
+            cursor: pointer;
         }
 
         &-rightsecond {
@@ -177,7 +177,13 @@
             top: 50%;
             right: 20px;
             width: 28px;
-        }        
+            cursor: pointer;
+        } 
+
+        &:hover {
+            translate: all ease 1s;
+            opacity: 0.65;
+        }
     }
 
     &__pluses {
@@ -244,7 +250,7 @@
         &__main {
 
             &-wrap {
-                padding: 90px 100px;
+                padding: 90px 100px 90px 120px;
             }
         }
     }
@@ -257,7 +263,7 @@
         &__main {
 
             &-wrap {
-                padding: 70px;
+                padding: 70px 70px 70px 90px;
             }
         }
 
@@ -299,6 +305,13 @@
                 a {
                     padding: 20px 50px;
                 }
+            }
+        }
+
+        &__arrow {
+
+            img {
+                filter: brightness(0) saturate(100%) invert(0%) sepia(41%) saturate(20%) hue-rotate(327deg) brightness(92%) contrast(80%);
             }
         }
     }
