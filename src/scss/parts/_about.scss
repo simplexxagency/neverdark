@@ -64,7 +64,8 @@
     &__title {
         position: absolute;
         z-index: 2;
-        top: -50px;
+        // top: -50px;
+        top: 50px;
         left: -200px;
         font-size: 140px;
         font-weight: 600;
@@ -151,7 +152,6 @@
                 letter-spacing: 1.00165px;
                 color: #1A1A1A;
             }
-            
         }
     }
 

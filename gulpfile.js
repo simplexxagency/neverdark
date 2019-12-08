@@ -45,6 +45,7 @@ gulp.task('css', function(){
         }))
         // .pipe(cssmin())
         // .pipe(rename({suffix: '.min'}))
+        // .pipe(wait(200))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css'))
         .pipe(browserSync.stream());
