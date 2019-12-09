@@ -213,7 +213,8 @@ input, select, textarea {
 
 body {
   background-color: #1a1a1a;
-  font-family: "Gill Sans Pro Cyrillic-medium", sans-serif; }
+  font-family: "Gill Sans Pro Cyrillic-medium", sans-serif;
+  overflow-x: hidden; }
 
 .text {
   font-family: "Noto Sans", sans-serif;
@@ -2693,6 +2694,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media all and (min-width: 1500px) {
+  .example__main-wrap {
+    padding: 90px 150px 84px 220px; } }
 
 @media all and (max-width: 1400px) {
   .example__card {
