@@ -2570,6 +2570,7 @@ body {
 .example__main {
   position: relative; }
   .example__main-wrap {
+    margin: 0 -15px;
     padding: 90px 150px 84px 150px;
     background-color: #1a1a1a; }
 
