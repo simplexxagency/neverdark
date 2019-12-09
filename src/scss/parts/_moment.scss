@@ -6,7 +6,7 @@
     }
 
     &__img {
-        width: 423px;
+        width: 500px;
         margin-bottom: 16px;
     }
 
@@ -35,20 +35,18 @@
 
     &__text {
         position: absolute;
-        top: 270px;
+        top: 290px;
         right: 47px;
-        width: 1100px;
-        font-size: 55px;
-        line-height: 76px;
+        width: 1000px;
         text-align: center;
-        letter-spacing: 3.24063px;
+        letter-spacing: 2.24063px;
         color: #FFFFFF;
         mix-blend-mode: difference;
     }
 
     &__line {
         position: relative;
-        bottom: -100%;
+        bottom: -90px;
         left: 56%;
     }
 } 
@@ -63,7 +61,6 @@
             left: 0;
             width: 100%;
             letter-spacing: normal;
-            font-size: 48px;
         }
 
         &__line {
@@ -83,8 +80,6 @@
 
         &__text {
             margin-bottom: 20px;
-            font-size: 30px;
-            line-height: normal;
         }
     }
 }
@@ -107,10 +102,6 @@
 
 @media all and (max-width: 577px) {
     .moment {
-
-        &__text {
-            font-size: 24px;
-        }
 
         &__date {
             font-size: 60px;
