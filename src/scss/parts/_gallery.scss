@@ -51,6 +51,12 @@
 
     &__arrow {
 
+        &:hover {
+            transition: all ease 1s;
+            opacity: 0.65;
+            cursor: pointer;
+        }
+
         &-left {
             position: absolute;
             top: 50%;
