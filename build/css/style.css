@@ -1727,9 +1727,14 @@ body {
       .compare__header-arrows li {
         width: 27px; }
         .compare__header-arrows li:nth-child(1) {
-          opacity: 0.4; }
+          -webkit-animation: opacityBottom 2s ease-out infinite;
+          animation: opacityBottom 2s ease-out infinite; }
         .compare__header-arrows li:nth-child(2) {
-          opacity: 0.7; }
+          -webkit-animation: opacityMiddle 2s ease infinite;
+          animation: opacityMiddle 2s ease infinite; }
+        .compare__header-arrows li:nth-child(3) {
+          -webkit-animation: opacityTop 2s ease-in infinite;
+          animation: opacityTop 2s ease-in infinite; }
     .compare__header-pluses {
       width: 270px; }
     .compare__header-plusesleft {
@@ -1846,12 +1851,16 @@ body {
     margin-right: 11px; }
   .compare__box-arrowsleft li:nth-child(1) {
     width: 31px;
-    opacity: 0.4; }
+    -webkit-animation: opacityBottom 2s ease-out infinite;
+    animation: opacityBottom 2s ease-out infinite; }
   .compare__box-arrowsleft li:nth-child(2) {
     width: 37px;
-    opacity: 0.7; }
+    -webkit-animation: opacityMiddle 2s ease infinite;
+    animation: opacityMiddle 2s ease infinite; }
   .compare__box-arrowsleft li:nth-child(3) {
-    width: 41px; }
+    width: 41px;
+    -webkit-animation: opacityTop 2s ease-in infinite;
+    animation: opacityTop 2s ease-in infinite; }
   .compare__box-arrowsright ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1863,12 +1872,76 @@ body {
     margin-right: 11px; }
   .compare__box-arrowsright li:nth-child(3) {
     width: 31px;
-    opacity: 0.4; }
+    -webkit-animation: opacityBottom 2s ease-out infinite;
+    animation: opacityBottom 2s ease-out infinite; }
   .compare__box-arrowsright li:nth-child(2) {
     width: 37px;
-    opacity: 0.7; }
+    -webkit-animation: opacityMiddle 2s ease infinite;
+    animation: opacityMiddle 2s ease infinite; }
   .compare__box-arrowsright li:nth-child(1) {
-    width: 41px; }
+    width: 41px;
+    -webkit-animation: opacityTop 2s ease-in infinite;
+    animation: opacityTop 2s ease-in infinite; }
+
+@-webkit-keyframes opacityTop {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.4; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 1; } }
+
+@keyframes opacityTop {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.4; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 1; } }
+
+@-webkit-keyframes opacityMiddle {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.25; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.8; } }
+
+@keyframes opacityMiddle {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.25; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.8; } }
+
+@-webkit-keyframes opacityBottom {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.1; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.6; } }
+
+@keyframes opacityBottom {
+  0% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.1; }
+  100% {
+    -webkit-transition: all ease;
+    transition: all ease;
+    opacity: 0.6; } }
 
 @media all and (min-width: 576px) {
   .compare .container {
