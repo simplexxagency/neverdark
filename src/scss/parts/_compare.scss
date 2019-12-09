@@ -84,7 +84,7 @@
                 width: 27px;
 
                 &:nth-child(1) {
-                    animation: opacityBottom 2s ease-out infinite;
+                    animation: opacityBottom 2s ease infinite;
                 }
 
                 &:nth-child(2) {
@@ -92,7 +92,7 @@
                 }
 
                 &:nth-child(3) {
-                    animation: opacityTop 2s ease-in infinite;
+                    animation: opacityTop 2s ease infinite;
                 }
             }
         }
@@ -248,7 +248,7 @@
                 &:nth-child(1) {
                     width: 31px;
                     // opacity: 0.4;
-                    animation: opacityBottom 2s ease-out infinite;
+                    animation: opacityTop 2s ease infinite;
                 }
 
                 &:nth-child(2) {
@@ -259,7 +259,7 @@
 
                 &:nth-child(3) {
                     width: 41px;
-                    animation: opacityTop 2s ease-in infinite;
+                    animation: opacityBottom 2s ease infinite;
                 }
             }
         }
@@ -280,7 +280,7 @@
                 &:nth-child(3) {
                     width: 31px;
                     // opacity: 0.4;
-                    animation: opacityBottom 2s ease-out infinite;
+                    animation: opacityTop 2s ease infinite;
                 }
 
                 &:nth-child(2) {
@@ -291,7 +291,7 @@
 
                 &:nth-child(1) {
                     width: 41px;
-                    animation: opacityTop 2s ease-in infinite;
+                    animation: opacityBottom 2s ease infinite;
                 }
             }
         }
@@ -303,10 +303,10 @@
         transition: all ease;
         opacity: 0.4;
     }
-    // 50% {
-    //     transition: all ease;
-    //     opacity: 0.7;
-    // }
+    66% {
+        transition: all ease;
+        opacity: 0.7;
+    }
     100% {
         transition: all ease;
         opacity: 1;
@@ -318,13 +318,13 @@
         transition: all ease;
         opacity: 0.25;
     }
-    // 50% {
-    //     transition: all ease;
-    //     opacity: 0.6;
-    // }
+    66% {
+        transition: all ease;
+        opacity: 1;
+    }
     100% {
         transition: all ease;
-        opacity: 0.8;
+        opacity: 0.25;
     }
 }
 
@@ -333,13 +333,13 @@
         transition: all ease;
         opacity: 0.1;
     }
-    // 50% {
-    //     transition: all ease;
-    //     opacity: 0.5;
-    // }
+    33% {
+        transition: all ease;
+        opacity: 1;
+    }
     100% {
         transition: all ease;
-        opacity: 0.6;
+        opacity: 0.1;
     }
 }
 
