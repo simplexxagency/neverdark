@@ -2570,7 +2570,7 @@ body {
 .example__main {
   position: relative; }
   .example__main-wrap {
-    padding: 90px 150px 84px 200px;
+    padding: 90px 150px 84px 150px;
     background-color: #1a1a1a; }
 
 .example__item {
@@ -2580,7 +2580,6 @@ body {
   flex: 0 0 auto; }
 
 .example__card {
-  width: 545px;
   padding: 45px 45px 66px;
   background-color: #fff; }
   .example__card-title {
@@ -2645,8 +2644,7 @@ body {
     color: #1A1A1A; }
 
 .example__img {
-  margin-bottom: 20px;
-  width: 460px; }
+  margin-bottom: 20px; }
 
 .example__arrow-left {
   position: absolute;
@@ -2695,10 +2693,6 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
-@media all and (min-width: 1500px) {
-  .example__main-wrap {
-    padding: 90px 150px 84px 220px; } }
-
 @media all and (max-width: 1400px) {
   .example__card {
     width: unset; }
@@ -2709,7 +2703,7 @@ body {
 
 @media all and (max-width: 1199px) {
   .example__card {
-    padding: 35px; }
+    padding: 20px; }
     .example__card-title {
       margin-bottom: 20px; }
     .example__card-wrap {
