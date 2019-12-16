@@ -1,6 +1,6 @@
 .gallery {
     padding-top: 133px;
-    margin-bottom: 230px;
+    margin-bottom: -50px;
 
     .container {
         width: 100%;
@@ -71,11 +71,17 @@
             width: 28px;
         }
     }
+
+    &__line {
+        position: relative;
+        left: 50%;
+
+    }
 }
 
 @media all and (max-width: 1400px) {
     .gallery {
-        margin-bottom: 50px;
+        margin-bottom: -50px;
     }
 }
 

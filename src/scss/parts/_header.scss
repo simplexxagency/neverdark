@@ -20,9 +20,26 @@
     }
 
     &__item {
+        position: relative;
         font-family: $font-noto, sans-serif;
         font-size: 13px;
         letter-spacing: 2.46508px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: #fff;
+            left: 0;
+            bottom: -5px;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
 
         &:not(:last-child) {
             margin-right: 30px;
@@ -80,7 +97,7 @@
     }
 
     &__logo {
-        width: 200px;
+        width: 100px;
     }
 }
 

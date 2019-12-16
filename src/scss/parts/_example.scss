@@ -112,8 +112,15 @@
                 background-color: #1a1a1a;
 
                 &:hover {
+                    color: #1a1a1a;
+                    background-color: #fff;
                     transition: all ease 1s;
                     box-shadow: 6px 7px 26px rgba(0, 0, 0, 0.5);
+               
+                    img {
+                        transition: all ease 1s;
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(9%) saturate(1189%) hue-rotate(317deg) brightness(113%) contrast(80%);
+                    }
                 }
 
                 span {

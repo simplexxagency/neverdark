@@ -12,7 +12,7 @@
     }
 
     &__logo {
-        width: 220px;
+        width: 180px;
     }
 
     &__contact {
@@ -32,23 +32,63 @@
 
         &-icon {
             margin-right: 21px;
-            width: 24px;
+            width: 18px;
         }
 
         &-mail {
-            font-size: 25px;
+            font-size: 22px;
             line-height: 76px;
             text-align: center;
             letter-spacing: 1.47302px;
             color: #1A1A1A;
+
+            a {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background-color: #1A1A1A;
+                    left: 0;
+                    bottom: -5px;
+                    -webkit-transition: width 0.5s;
+                    transition: width 0.5s;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
         }
 
         &-phone {
-            font-size: 25px;
+            font-size: 22px;
             line-height: 76px;
             text-align: center;
             letter-spacing: 1.47302px;
             color: #1A1A1A;
+
+            a {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background-color: #1A1A1A;
+                    left: 0;
+                    bottom: -5px;
+                    -webkit-transition: width 0.5s;
+                    transition: width 0.5s;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
 
             span {
                 font-family: $font-noto, sans-serif;
@@ -91,7 +131,7 @@
             font-family: $font-noto, sans-serif;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 30px;
             letter-spacing: 0.94273px;
             color: #1A1A1A;
@@ -100,22 +140,39 @@
         &-link {
 
             a {
+                position: relative;
                 padding-bottom: 6px;
                 display: flex;
                 align-items: center;
                 font-family: $font-noto, sans-serif;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 14px;
                 text-align: center;
                 letter-spacing: 3.02273px;
                 color: #1A1A1A;
-                border-bottom: 2px solid #1a1a1a;
+                // border-bottom: 2px solid #1a1a1a;
 
                 img {
                     margin-left: 9px;
                     width: 11px;
                     filter: brightness(0) saturate(100%) invert(0%) sepia(79%) saturate(2772%) hue-rotate(38deg) brightness(88%) contrast(80%);
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background-color: #1a1a1a;
+                    left: 0;
+                    bottom: -5px;
+                    -webkit-transition: width 0.5s;
+                    transition: width 0.5s;
+                }
+
+                &:hover:after {
+                    width: 100%;
                 }
             }
         }
@@ -136,7 +193,14 @@
                 background-color: #1a1a1a;
 
                 &:hover {
+                    transition: all ease 1s;
+                    color: #1a1a1a;
+                    background-color: #fff;
                     box-shadow: 6px 7px 26px rgba(0, 0, 0, 0.5);
+                
+                    img {
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(31%) saturate(82%) hue-rotate(173deg) brightness(104%) contrast(80%);
+                    }
                 }
             }
         }
