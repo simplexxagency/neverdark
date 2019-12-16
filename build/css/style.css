@@ -2939,18 +2939,24 @@ body {
   .gallery__arrow-left {
     left: 30px; }
   .gallery__arrow-right {
-    right: 30px; } }
+    right: 30px; }
+  .gallery__line {
+    height: 200px; } }
 
 @media all and (max-width: 767px) {
   .gallery__wrap {
     padding: 0 65px; } }
 
 @media all and (max-width: 577px) {
-  .gallery__title {
-    padding: 0 15px;
-    font-size: 60px; }
-  .gallery__wrap {
-    padding: 0 15px; } }
+  .gallery {
+    margin-bottom: 50px; }
+    .gallery__title {
+      padding: 0 15px;
+      font-size: 60px; }
+    .gallery__wrap {
+      padding: 0 15px; }
+    .gallery__line {
+      display: none; } }
 
 .form {
   padding-top: 117px; }

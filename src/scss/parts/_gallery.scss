@@ -117,6 +117,10 @@
                 right: 30px;
             }
         }
+
+        &__line {
+            height: 200px;
+        }
     }
 }
 
@@ -131,6 +135,7 @@
 
 @media all and (max-width: 577px) {
     .gallery {
+        margin-bottom: 50px;
         
         &__title {
             padding: 0 15px;
@@ -139,6 +144,10 @@
 
         &__wrap {
             padding: 0 15px;
+        }
+
+        &__line {
+            display: none;
         }
     }
 }
