@@ -187,13 +187,13 @@
             a {
                 display: flex;
                 align-items: center;
-                padding: 20px 50px;
+                padding: 16px;
                 font-family: $font-noto, sans-serif;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
-                letter-spacing: 3.77841px;
+                letter-spacing: 2px;
                 color: #FFFFFF;
                 background-color: #1a1a1a;
 
@@ -327,12 +327,12 @@
 
         &__main {
 
-            &-button {
+            // &-button {
 
-                a {
-                    padding: 22px 35px;
-                }
-            }
+            //     a {
+            //         padding: px 35px;
+            //     }
+            // }
 
             &-address {
                 margin-right: 40px;

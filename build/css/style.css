@@ -3459,13 +3459,13 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 20px 50px;
+        padding: 16px;
         font-family: "Noto Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
-        letter-spacing: 3.77841px;
+        letter-spacing: 2px;
         color: #FFFFFF;
         background-color: #1a1a1a; }
         .footer__main-button a:hover {
@@ -3529,8 +3529,6 @@ body {
     .footer__contact-item:not(:last-child) {
       margin-right: 0;
       margin-bottom: 30px; }
-  .footer__main-button a {
-    padding: 22px 35px; }
   .footer__main-address {
     margin-right: 40px; }
   .footer__main-city {
