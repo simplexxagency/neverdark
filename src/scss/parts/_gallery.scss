@@ -1,6 +1,6 @@
 .gallery {
     padding-top: 133px;
-    margin-bottom: -50px;
+    margin-bottom: 50px;
 
     .container {
         width: 100%;
@@ -32,9 +32,9 @@
         flex: 0 0 auto;
     }
 
-    &__card {
-        // width: 1065px;
-    }
+    // &__card {
+    //     // width: 1065px;
+    // }
 
     &__wrap {
         padding: 0 276px;
@@ -81,7 +81,7 @@
 
 @media all and (max-width: 1400px) {
     .gallery {
-        margin-bottom: -50px;
+        margin-bottom: 50px;
     }
 }
 

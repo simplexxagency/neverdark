@@ -60,7 +60,7 @@
     &__line {
         position: absolute;
         left: 405px;
-        bottom: 121px;
+        bottom: 240px;
     }
 
     &__desc {
@@ -155,6 +155,7 @@
 
 @media all and (max-width: 577px) {
     .trinyty {
+        margin-bottom: -20px;
 
         &__pluses {
             display: none;
@@ -172,6 +173,7 @@
 
 @media all and (max-width: 420px) {
     .trinyty {
+        margin-bottom: 0;
 
         &__date {
             font-size: 50px;

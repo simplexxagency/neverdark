@@ -1,5 +1,6 @@
 .form {
-    padding-top: 117px;
+    // padding-top: 117px;
+    background-color: #fff;
 
     .container {
         max-width: 100%;
@@ -22,13 +23,13 @@
         text-align: center;
         letter-spacing: 8px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #1a1a1a;
 
         div {
             width: 28px;
 
             img {
-                filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(2%) hue-rotate(51deg) brightness(109%) contrast(100%);
+                filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1140%) hue-rotate(9deg) brightness(101%) contrast(80%);
             }
         }
 
@@ -66,7 +67,7 @@
 
             img {
                 opacity: 0.65;
-                filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(2%) hue-rotate(51deg) brightness(109%) contrast(100%);
+                filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1140%) hue-rotate(9deg) brightness(101%) contrast(80%);
             }
         }
 
@@ -81,9 +82,9 @@
             font-size: 16px;
             line-height: 30px;
             letter-spacing: 0.94273px;
-            color: #FFFFFF;
-            opacity: 0.44;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+            color: #1a1a1a;
+            // opacity: 0.44;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.65);
         
         }
     }
@@ -99,14 +100,14 @@
             font-weight: normal;
             font-size: 20px;
             letter-spacing: 3.77841px;
-            color: #1A1A1A;
-            background-color: #fff;
+            color: #fff;
+            background-color: #1a1a1a;
 
             &:hover {
-                color: #fff;
-                background-color: #1a1a1a;
+                color: #1a1a1a;
+                background-color: #fff;
                 transition: all ease 1s;
-                box-shadow: 6px 7px 26px rgba(255, 255, 255, 0.5);
+                box-shadow: 6px 7px 26px rgba(0, 0, 0, 0.5);
             }
         }
 
@@ -114,7 +115,7 @@
 
             img {
                 transition: all ease 1s;
-                filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1061%) hue-rotate(238deg) brightness(118%) contrast(100%);
+                filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1140%) hue-rotate(9deg) brightness(101%) contrast(80%);
             }
         }
         
@@ -127,7 +128,7 @@
             width: 14px;
 
             img {
-                filter: brightness(0) saturate(100%) invert(0%) sepia(79%) saturate(2772%) hue-rotate(38deg) brightness(88%) contrast(80%);
+                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(213deg) brightness(119%) contrast(111%);
             }
         }
     }

@@ -1,0 +1,170 @@
+.ecology {
+    margin-bottom: -300px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        min-height: 1100px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__img {
+        position: relative;
+        width: 600px;
+        margin-bottom: 20px;
+
+        &>img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    // &__pluses {
+    //     position: absolute;
+    //     left: -80px;
+    //     top: -53px;
+    //     width: 270px;
+    // }
+
+    &__date {
+        position: absolute;
+        left: 300px;
+        // top: 320px;
+        top: 270px;
+        z-index: 1;
+        mix-blend-mode: difference;
+        font-size: 130px;
+        font-weight: 600;
+        line-height: 152px;
+        letter-spacing: 8.47218px;
+        color: #FFFFFF;
+
+        span {
+            font-size: 85px;
+        }
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.824889px;
+        color: #E8E8E8;
+    }
+
+    &__text {
+        position: relative;
+        top: 115px;
+        width: 555px;
+    }
+
+    &__line {
+        position: absolute;
+        right: 300px;
+        top: 300px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .ecology {
+        margin-bottom: -150px;
+
+        &__container {
+            flex-direction: column;
+            justify-content: unset;
+        }
+
+        &__img {
+            width: 700px;
+        }
+
+        &__date {
+            left: 500px;
+        }
+
+        &__text {
+            top: 20px;
+        }
+
+        &__line {
+            position: absolute;
+            right: 100px;
+            top: -300px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .ecology {
+
+        &__img {
+            width: 500px;
+        }
+
+        &__date {
+            left: 200px;
+            white-space: nowrap;
+        }
+
+        &__line {
+            top: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ecology {
+
+        &__img {
+            width: 400px;
+        }
+
+        &__date {
+            left: 250px;
+            font-size: 60px;
+            top: 170px;
+        }
+
+        &__line {
+            top: 200px;
+            height: 300px;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .ecology {
+        margin-bottom: -50px;
+
+        &__text {
+            width: 100%;
+        }
+
+        &__line {
+            height: 200px;
+            top: 260px;
+        }
+
+        &__date {
+            top: 120px;
+            left: 0;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .ecology {
+        margin-bottom: -200px;
+
+        &__line {
+            top: 300px;
+        }
+    }
+}

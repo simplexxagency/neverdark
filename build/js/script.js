@@ -134,7 +134,6 @@ $(document).ready(function () {
 
     $slickElement.slick({
         dots: false,
-        vertical: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: $('.gallery__arrow-right'),
