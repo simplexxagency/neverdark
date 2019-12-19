@@ -1681,6 +1681,8 @@ body {
       position: relative;
       bottom: -8px;
       right: 0; }
+      .fire__box-text p:not(:last-child) {
+        margin-bottom: 30px; }
   .fire__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
