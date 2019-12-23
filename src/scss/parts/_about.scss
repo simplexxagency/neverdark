@@ -4,7 +4,7 @@
     background-color: #fff;
 
     &__header {
-        margin-bottom: 600px;
+        margin-bottom: 400px;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -106,7 +106,7 @@
         &-wrap {
             position: absolute;
             left: 407px;
-            top: -231px;
+            top: 100px;
         }
 
         &-img {
@@ -128,8 +128,8 @@
 
         &-line {
             position: absolute;
-            right: 0;
-            top: -50%;
+            right: 130px;
+            top: -40%;
             height: 300px;
             background-color: rgba(26, 26, 26, 0.65);
         }
@@ -299,7 +299,7 @@
 
             &-line {
                 right: 100px;
-                top: -70%;
+                top: -50%;
             }
         }
 
@@ -486,6 +486,10 @@
                 position: relative;
                 top: -300px;
 
+            }
+
+            &-title {
+                color: #1a1a1a;
             }
 
             &-text {

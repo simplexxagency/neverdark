@@ -2359,7 +2359,7 @@ body {
   padding-bottom: 133px;
   background-color: #fff; }
   .about__header {
-    margin-bottom: 600px;
+    margin-bottom: 400px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2438,7 +2438,7 @@ body {
     .about__main-wrap {
       position: absolute;
       left: 407px;
-      top: -231px; }
+      top: 100px; }
     .about__main-img {
       width: 480px; }
     .about__main-title {
@@ -2454,8 +2454,8 @@ body {
       mix-blend-mode: exclusion; }
     .about__main-line {
       position: absolute;
-      right: 0;
-      top: -50%;
+      right: 130px;
+      top: -40%;
       height: 300px;
       background-color: rgba(26, 26, 26, 0.65); }
     .about__main-text {
@@ -2585,7 +2585,7 @@ body {
       left: 150px; }
     .about__main-line {
       right: 100px;
-      top: -70%; }
+      top: -50%; }
   .about__pluses {
     right: 0; }
   .about__footer-desc {
@@ -2689,6 +2689,8 @@ body {
       .about__main-bg {
         position: relative;
         top: -300px; }
+      .about__main-title {
+        color: #1a1a1a; }
       .about__main-text {
         position: relative;
         top: -280px; }
