@@ -1102,8 +1102,8 @@ body {
       z-index: 1; }
   .history__plus {
     position: absolute;
-    bottom: -52px;
-    right: -83px;
+    bottom: -77px;
+    right: -53px;
     width: 270px; }
   .history__desc {
     position: relative;
@@ -1393,7 +1393,7 @@ body {
   .trinyty__pluses {
     position: absolute;
     right: -80px;
-    top: -53px;
+    top: -77px;
     width: 270px; }
   .trinyty__date {
     position: absolute;
@@ -2661,7 +2661,7 @@ body {
   .about__pluses {
     right: 50%; }
   .about__main {
-    margin: 0 -15px 50px; }
+    margin: 0 -15px 100px; }
     .about__main-wrap {
       top: -390px; }
     .about__main-title {
