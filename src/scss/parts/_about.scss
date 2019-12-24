@@ -30,7 +30,7 @@
         right: -51px;
 
         img {
-            filter: brightness(0) saturate(100%) invert(0%) sepia(58%) saturate(860%) hue-rotate(338deg) brightness(89%) contrast(80%);
+            filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
         }
 
         &-left,
@@ -46,6 +46,11 @@
             li {
                 width: 25px;
                 padding: 2px;
+
+                img {
+                    opacity: 0.5;
+                    filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
+                }
             }
         }
 

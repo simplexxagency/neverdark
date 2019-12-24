@@ -201,6 +201,10 @@
         width: 100%;
         background-color: #fff;
 
+        img {
+            filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
+        }
+
         &-top {
             padding-bottom: 136px;
         }

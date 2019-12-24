@@ -2380,8 +2380,8 @@ body {
     top: -76px;
     right: -51px; }
     .about__pluses img {
-      -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(58%) saturate(860%) hue-rotate(338deg) brightness(89%) contrast(80%);
-      filter: brightness(0) saturate(100%) invert(0%) sepia(58%) saturate(860%) hue-rotate(338deg) brightness(89%) contrast(80%); }
+      -webkit-filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
+      filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%); }
     .about__pluses-left, .about__pluses-right {
       position: absolute; }
       .about__pluses-left ul, .about__pluses-right ul {
@@ -2394,6 +2394,10 @@ body {
       .about__pluses-left li, .about__pluses-right li {
         width: 25px;
         padding: 2px; }
+        .about__pluses-left li img, .about__pluses-right li img {
+          opacity: 0.5;
+          -webkit-filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
+          filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%); }
     .about__pluses-left {
       left: 0;
       top: 0; }
@@ -2949,6 +2953,9 @@ body {
   padding-bottom: 10px;
   width: 100%;
   background-color: #fff; }
+  .example__pluses img {
+    -webkit-filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(40%) sepia(1%) saturate(0%) hue-rotate(196deg) brightness(94%) contrast(88%); }
   .example__pluses-top {
     padding-bottom: 136px; }
   .example__pluses-bottom {
