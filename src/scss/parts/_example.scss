@@ -17,20 +17,20 @@
         text-align: center;
         letter-spacing: 8px;
         text-transform: uppercase;
-        color: #1A1A1A;
+        color: #fff;
     }
 
     &__plus {
         width: 28px;
 
         img {
-            filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(33%) hue-rotate(348deg) brightness(107%) contrast(80%);
+            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(197deg) brightness(103%) contrast(101%);
         }
     }
 
     &__header {
         padding-bottom: 76px;
-        background-color: #fff;
+        background-color: #1a1a1a;
 
         &-wrap {
             display: flex;
@@ -46,7 +46,7 @@
         line-height: 30px;
         text-align: center;
         letter-spacing: 0.94273px;
-        color: #1A1A1A;
+        color: #fff;
 
         span {
             display: inline-block;
