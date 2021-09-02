@@ -21,7 +21,7 @@
     "npm-check-updates": "^3.1.25",
     "set-value": "^3.0.1",
     "static-eval": "^2.0.2",
-    "tar": "^4.4.10",
+    "tar": "^4.4.18",
     "underscore.string": "^3.3.5"
   },
   "devDependencies": {
